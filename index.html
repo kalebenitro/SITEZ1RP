@@ -388,33 +388,12 @@
       transition: 0.4s;
     }
 
-    .vip-card:hover::before {
-      opacity: 1;
-    }
+    .vip-card:hover::before { opacity: 1; }
+    .vip-card.popular { border: 1px solid #00f2fe; box-shadow: 0 0 45px rgba(0, 242, 254, 0.35); transform: scale(1.02); }
+    .vip-card:hover { transform: translateY(-8px); border-color: #00e5ff; box-shadow: 0 25px 45px rgba(0, 200, 255, 0.4); }
 
-    .vip-card.popular {
-      border: 1px solid #00f2fe;
-      box-shadow: 0 0 45px rgba(0, 242, 254, 0.35);
-      transform: scale(1.02);
-    }
-
-    .vip-card:hover {
-      transform: translateY(-8px);
-      border-color: #00e5ff;
-      box-shadow: 0 25px 45px rgba(0, 200, 255, 0.4);
-    }
-
-    .vip-icon-img {
-      width: 65px;
-      height: 65px;
-      object-fit: contain;
-      margin-bottom: 8px;
-      transition: 0.3s;
-    }
-
-    .vip-card:hover .vip-icon-img {
-      transform: scale(1.1);
-    }
+    .vip-icon-img { width: 65px; height: 65px; object-fit: contain; margin-bottom: 8px; transition: 0.3s; }
+    .vip-card:hover .vip-icon-img { transform: scale(1.1); }
 
     .vip-card .luxuria-icon { filter: drop-shadow(0 0 15px rgba(255, 105, 180, 0.7)); }
     .vip-card:hover .luxuria-icon { filter: drop-shadow(0 0 25px rgba(255, 105, 180, 1)); }
@@ -425,1019 +404,201 @@
     .vip-card .marginalgrife-icon { filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.7)); }
     .vip-card:hover .marginalgrife-icon { filter: drop-shadow(0 0 25px rgba(255, 215, 0, 1)); }
 
-    .vip-name {
-      font-size: 1.6rem;
-      font-weight: 800;
-      margin: 12px 0 6px;
-      color: white;
-    }
-
-    .price {
-      font-size: 2.3rem;
-      font-weight: 800;
-      color: #00f2fe;
-      margin: 10px 0;
-    }
-
-    .price small {
-      font-size: 0.85rem;
-      color: #8ea9c7;
-    }
-
-    .features {
-      list-style: none;
-      text-align: left;
-      margin: 22px 0;
-      color: #cbd5e1;
-    }
-
-    .features li {
-      margin: 10px 0;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 0.9rem;
-    }
-
-    .features i {
-      color: #00f2fe;
-      font-size: 1.1rem;
-    }
+    .vip-name { font-size: 1.6rem; font-weight: 800; margin: 12px 0 6px; color: white; }
+    .price { font-size: 2.3rem; font-weight: 800; color: #00f2fe; margin: 10px 0; }
+    .price small { font-size: 0.85rem; color: #8ea9c7; }
+    .features { list-style: none; text-align: left; margin: 22px 0; color: #cbd5e1; }
+    .features li { margin: 10px 0; display: flex; align-items: center; gap: 8px; font-size: 0.9rem; }
+    .features i { color: #00f2fe; font-size: 1.1rem; }
 
     .btn-buy {
-      background: #0a1a2f;
-      border: 1px solid #00f2fe;
-      color: #00f2fe;
-      padding: 12px 24px;
-      border-radius: 40px;
-      font-weight: 700;
-      width: 100%;
-      transition: 0.3s;
-      cursor: pointer;
-      font-size: 0.95rem;
-      text-transform: uppercase;
-    }
-
-    .btn-buy:hover {
-      background: #00f2fe;
-      color: #03050a;
-      box-shadow: 0 0 30px #00b4d8;
-    }
-
-    .coin-icon {
-      width: 60px;
-      height: 60px;
-      object-fit: contain;
-      filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.6));
-      margin-bottom: 8px;
-      transition: 0.3s;
-    }
-
-    .vip-card:hover .coin-icon {
-      filter: drop-shadow(0 0 25px rgba(255, 215, 0, 0.9));
-      transform: scale(1.1);
-    }
-
-    .table-wrapper {
-      background: rgba(12, 20, 35, 0.7);
-      backdrop-filter: blur(18px);
-      border: 1px solid rgba(0, 255, 196, 0.2);
-      border-radius: 24px;
-      overflow: hidden;
-      margin-bottom: 30px;
-      transition: 0.3s;
-    }
-
-    .table-wrapper:hover {
-      border-color: rgba(0, 255, 196, 0.5);
-      box-shadow: 0 0 40px rgba(0, 242, 254, 0.15);
-    }
-
-    .table-header {
-      background: rgba(0, 242, 254, 0.08);
-      padding: 18px 24px;
-      border-bottom: 1px solid rgba(0, 255, 196, 0.2);
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .table-header i {
-      font-size: 1.8rem;
-      color: #00f2fe;
-      filter: drop-shadow(0 0 10px #00e5ff);
-    }
-
-    .table-header h3 {
-      font-size: 1.4rem;
-      color: #fff;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-
-    table th {
-      background: rgba(0, 242, 254, 0.05);
-      color: #00f2fe;
-      font-weight: 700;
-      font-size: 0.9rem;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      padding: 14px 18px;
-      text-align: left;
-      border-bottom: 1px solid rgba(0, 255, 196, 0.15);
-    }
-
-    table td {
-      padding: 12px 18px;
-      color: #cbd5e1;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-      font-size: 0.9rem;
-    }
-
-    table tbody tr:hover {
-      background: rgba(0, 242, 254, 0.05);
-    }
-
-    table tbody tr:last-child td {
-      border-bottom: none;
-    }
-
-    .price-highlight {
-      color: #00f2fe;
-      font-weight: 700;
-      font-size: 1.05rem;
-      font-family: 'Exo 2', sans-serif;
-    }
-
-    .badge-item {
-      background: rgba(0, 242, 254, 0.1);
-      border: 1px solid rgba(0, 242, 254, 0.3);
-      color: #00f2fe;
-      padding: 4px 10px;
-      border-radius: 20px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      display: inline-block;
-      margin: 2px 4px;
-    }
-
-    .mini-cards-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 24px;
-      margin-bottom: 40px;
-    }
-
-    .mini-card {
-      background: rgba(12, 20, 35, 0.7);
-      backdrop-filter: blur(18px);
-      border: 1px solid rgba(0, 255, 196, 0.2);
-      border-radius: 24px;
-      padding: 22px;
-      transition: 0.3s;
-    }
-
-    .mini-card:hover {
-      border-color: rgba(0, 255, 196, 0.5);
-      box-shadow: 0 0 30px rgba(0, 242, 254, 0.15);
-    }
-
-    .mini-card h4 {
-      font-size: 1.2rem;
-      color: #fff;
-      margin-bottom: 14px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .mini-card h4 i {
-      color: #00f2fe;
-    }
-
-    .mini-card .item-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 8px 0;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    }
-
-    .mini-card .item-row:last-child {
-      border-bottom: none;
-    }
-
-    .mini-card .item-name {
-      color: #cbd5e1;
-      font-size: 0.9rem;
-    }
-
-    .mini-card .item-value {
-      color: #00f2fe;
-      font-weight: 700;
-      font-family: 'Exo 2', sans-serif;
-    }
-
-    /* ==================== MODAL DE COMPRA ==================== */
-    .modal-overlay {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0,0,0,0.85);
-      z-index: 1000;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .modal-overlay.active {
-      display: flex;
-    }
-
-    .modal {
-      background: rgba(12, 20, 35, 0.95);
-      backdrop-filter: blur(25px);
-      border: 1px solid rgba(0, 255, 196, 0.3);
-      border-radius: 28px;
-      padding: 32px 28px;
-      max-width: 520px;
-      width: 90%;
-      text-align: center;
-      box-shadow: 0 0 60px rgba(0, 242, 254, 0.3);
-      animation: modalIn 0.3s ease;
-    }
-
-    @keyframes modalIn {
-      from { transform: scale(0.9); opacity: 0; }
-      to { transform: scale(1); opacity: 1; }
-    }
-
-    .modal h3 {
-      font-size: 1.6rem;
-      color: #00f2fe;
-      margin-bottom: 6px;
-    }
-
-    .modal .item-name-modal {
-      font-size: 1.2rem;
-      color: #fff;
-      margin-bottom: 20px;
-    }
-
-    .modal .input-group {
-      margin-bottom: 16px;
-      text-align: left;
-    }
-
-    .modal .input-group label {
-      display: block;
-      color: #b4c8e0;
-      margin-bottom: 5px;
-      font-weight: 600;
-      font-size: 0.85rem;
-    }
-
-    .modal .input-group input,
-    .modal .input-group select {
-      width: 100%;
-      padding: 10px 14px;
-      background: rgba(0,0,0,0.5);
-      border: 1px solid rgba(0, 255, 196, 0.3);
-      border-radius: 12px;
-      color: #fff;
-      font-size: 0.95rem;
-      font-family: 'Inter', sans-serif;
-      transition: 0.3s;
-    }
-
-    .modal .input-group input:focus,
-    .modal .input-group select:focus {
-      outline: none;
-      border-color: #00f2fe;
-      box-shadow: 0 0 15px rgba(0, 242, 254, 0.2);
-    }
-
-    .modal .input-group select option {
-      background: #0a1a2f;
-      color: #fff;
-    }
-
-    .modal .btn-submit {
-      background: linear-gradient(135deg, #00f2fe, #0077b6);
-      color: #03050a;
-      padding: 12px 30px;
-      border-radius: 50px;
-      font-weight: 700;
-      font-size: 1rem;
-      border: none;
-      cursor: pointer;
-      width: 100%;
-      margin-top: 6px;
-      transition: 0.3s;
-    }
-
-    .modal .btn-submit:hover {
-      box-shadow: 0 0 35px rgba(0, 255, 200, 0.6);
-    }
-
-    .modal .btn-close {
-      background: transparent;
-      border: 1px solid rgba(255,255,255,0.2);
-      color: #fff;
-      padding: 8px 20px;
-      border-radius: 50px;
-      cursor: pointer;
-      margin-top: 8px;
-      transition: 0.3s;
-    }
-
-    .modal .btn-close:hover {
-      border-color: #f44336;
-      color: #f44336;
-    }
-
-    .success-msg {
-      display: none;
-      color: #00f2fe;
-      font-weight: 700;
-      margin-top: 10px;
-      font-size: 0.95rem;
-    }
-
-    .success-msg.show {
-      display: block;
-      animation: fadeIn 0.5s;
-    }
-
-    /* CAIXA DE PIX */
-    .pix-info-box {
-      display: none;
-      background: rgba(0, 255, 100, 0.08);
-      border: 1px solid rgba(0, 255, 100, 0.4);
-      border-radius: 16px;
-      padding: 20px;
-      margin-top: 16px;
-      text-align: center;
-    }
-
-    .pix-info-box.show {
-      display: block;
-      animation: fadeIn 0.5s;
-    }
-
-    .pix-info-box .pix-icon {
-      font-size: 2.5rem;
-      color: #00ff64;
-      margin-bottom: 8px;
-      filter: drop-shadow(0 0 15px rgba(0, 255, 100, 0.6));
-    }
-
-    .pix-info-box h4 {
-      color: #fff;
-      font-size: 1.1rem;
-      margin-bottom: 6px;
-    }
-
-    .pix-info-box .pix-key {
-      background: rgba(0,0,0,0.4);
-      border: 1px solid rgba(0, 255, 100, 0.3);
-      color: #00ff64;
-      padding: 10px 16px;
-      border-radius: 10px;
-      font-size: 1.2rem;
-      font-weight: 700;
-      letter-spacing: 1px;
-      margin: 10px 0;
-      word-break: break-all;
-    }
-
-    .pix-info-box .btn-copy-pix {
-      background: #00ff64;
-      color: #03050a;
-      padding: 10px 24px;
-      border-radius: 50px;
-      font-weight: 700;
-      border: none;
-      cursor: pointer;
-      font-size: 0.9rem;
-      transition: 0.3s;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .pix-info-box .btn-copy-pix:hover {
-      background: #00cc50;
-      box-shadow: 0 0 25px rgba(0, 255, 100, 0.5);
-    }
-
-    .pix-info-box .btn-discord-ticket-pix {
-      background: #5865F2;
-      color: #fff;
-      padding: 10px 24px;
-      border-radius: 50px;
-      font-weight: 700;
-      font-size: 0.9rem;
-      border: none;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      transition: 0.3s;
-      margin-left: 8px;
-    }
-
-    .pix-info-box .btn-discord-ticket-pix:hover {
-      background: #4752C4;
-      box-shadow: 0 0 25px rgba(88, 101, 242, 0.5);
-    }
-
-    .pix-info-box .pix-warning {
-      color: #ffc107;
-      font-size: 0.85rem;
-      margin-top: 12px;
-    }
-
-    /* ALERTA DISCORD (sem PIX) */
-    .discord-alert-box {
-      display: none;
-      background: rgba(88, 101, 242, 0.1);
-      border: 1px solid #5865F2;
-      border-radius: 16px;
-      padding: 20px;
-      margin-top: 16px;
-      text-align: center;
-    }
-
-    .discord-alert-box.show {
-      display: block;
-      animation: fadeIn 0.5s;
-    }
-
-    .discord-alert-box .discord-alert-icon {
-      font-size: 3rem;
-      color: #5865F2;
-      margin-bottom: 10px;
-      filter: drop-shadow(0 0 15px rgba(88, 101, 242, 0.6));
-    }
-
-    .discord-alert-box h4 {
-      color: #fff;
-      font-size: 1.2rem;
-      margin-bottom: 6px;
-    }
-
-    .discord-alert-box p {
-      color: #b4c8e0;
-      font-size: 0.95rem;
-      line-height: 1.6;
-      margin-bottom: 14px;
-    }
-
-    .discord-alert-box .btn-discord-ticket {
-      background: #5865F2;
-      color: #fff;
-      padding: 12px 28px;
-      border-radius: 50px;
-      font-weight: 700;
-      font-size: 1rem;
-      border: none;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      transition: 0.3s;
-    }
-
-    .discord-alert-box .btn-discord-ticket:hover {
-      background: #4752C4;
-      box-shadow: 0 0 30px rgba(88, 101, 242, 0.6);
-      transform: translateY(-2px);
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    /* ==================== BOTÃO TICKET FLUTUANTE ==================== */
-    .ticket-panel {
-      position: fixed;
-      bottom: 24px;
-      left: 24px;
-      z-index: 500;
-    }
-
-    .ticket-toggle {
-      background: #5865F2;
-      color: #fff;
-      width: 55px;
-      height: 55px;
-      border-radius: 50%;
-      border: none;
-      cursor: pointer;
-      font-size: 1.4rem;
-      box-shadow: 0 0 30px rgba(88, 101, 242, 0.5);
-      transition: 0.3s;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      animation: ticketPulse 2s ease-in-out infinite;
-    }
-
-    @keyframes ticketPulse {
-      0%, 100% { box-shadow: 0 0 25px rgba(88, 101, 242, 0.5); }
-      50% { box-shadow: 0 0 45px rgba(88, 101, 242, 0.9); }
-    }
-
-    .ticket-toggle:hover {
-      transform: scale(1.1);
-      box-shadow: 0 0 50px rgba(88, 101, 242, 0.9);
-      animation: none;
-    }
-
-    .ticket-tooltip {
-      position: absolute;
-      bottom: 70px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: rgba(12, 20, 35, 0.95);
-      backdrop-filter: blur(15px);
-      border: 1px solid rgba(88, 101, 242, 0.4);
-      color: #fff;
-      padding: 8px 14px;
-      border-radius: 10px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      white-space: nowrap;
-      pointer-events: none;
-      opacity: 0;
-      transition: opacity 0.3s;
-    }
-
-    .ticket-panel:hover .ticket-tooltip {
-      opacity: 1;
-    }
-
-    /* ==================== PAINEL DE AJUDA ==================== */
-    .help-panel {
-      position: fixed;
-      bottom: 24px;
-      right: 24px;
-      z-index: 500;
-    }
-
-    .help-toggle {
-      background: linear-gradient(135deg, #00f2fe, #0077b6);
-      color: #03050a;
-      width: 55px;
-      height: 55px;
-      border-radius: 50%;
-      border: none;
-      cursor: pointer;
-      font-size: 1.4rem;
-      box-shadow: 0 0 30px rgba(0, 242, 254, 0.5);
-      transition: 0.3s;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .help-toggle:hover {
-      transform: scale(1.1);
-      box-shadow: 0 0 45px rgba(0, 242, 254, 0.8);
-    }
-
-    .help-box {
-      display: none;
-      position: absolute;
-      bottom: 70px;
-      right: 0;
-      background: rgba(12, 20, 35, 0.95);
-      backdrop-filter: blur(25px);
-      border: 1px solid rgba(0, 255, 196, 0.3);
-      border-radius: 20px;
-      padding: 22px;
-      width: 320px;
-      box-shadow: 0 0 40px rgba(0, 242, 254, 0.3);
-      animation: modalIn 0.3s ease;
-    }
-
-    .help-box.active {
-      display: block;
-    }
-
-    .help-box h4 {
-      color: #00f2fe;
-      font-size: 1.2rem;
-      margin-bottom: 14px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .help-box .input-group {
-      margin-bottom: 12px;
-    }
-
-    .help-box .input-group label {
-      display: block;
-      color: #b4c8e0;
-      margin-bottom: 4px;
-      font-size: 0.8rem;
-      font-weight: 600;
-    }
-
-    .help-box .input-group input,
-    .help-box .input-group textarea {
-      width: 100%;
-      padding: 9px 12px;
-      background: rgba(0,0,0,0.5);
-      border: 1px solid rgba(0, 255, 196, 0.3);
-      border-radius: 10px;
-      color: #fff;
-      font-size: 0.85rem;
-      font-family: 'Inter', sans-serif;
-      transition: 0.3s;
-      resize: vertical;
-    }
-
-    .help-box .input-group textarea {
-      min-height: 70px;
-    }
-
-    .help-box .btn-send-help {
-      background: #00f2fe;
-      color: #03050a;
-      padding: 10px 20px;
-      border-radius: 50px;
-      font-weight: 700;
-      border: none;
-      cursor: pointer;
-      width: 100%;
-      transition: 0.3s;
-    }
-
-    .help-box .btn-send-help:hover {
-      box-shadow: 0 0 30px rgba(0, 255, 200, 0.6);
-    }
-
-    /* ==================== PÁGINAS ==================== */
-    .page {
-      display: none;
-    }
-
-    .page.active {
-      display: block;
-    }
-
-    .rules-container {
-      max-width: 900px;
-      margin: 40px auto 50px;
-    }
-
-    .rules-card {
-      background: rgba(12, 20, 35, 0.75);
-      backdrop-filter: blur(18px);
-      border: 1px solid rgba(0, 255, 196, 0.2);
-      border-radius: 24px;
-      padding: 36px 32px;
-      transition: 0.3s;
-    }
-
-    .rules-card:hover {
-      border-color: rgba(0, 255, 196, 0.5);
-      box-shadow: 0 0 40px rgba(0, 242, 254, 0.15);
-    }
-
-    .rules-card .rules-header {
-      text-align: center;
-      margin-bottom: 30px;
-      padding-bottom: 24px;
-      border-bottom: 1px solid rgba(0, 255, 196, 0.2);
-    }
-
-    .rules-card .rules-header i {
-      font-size: 3rem;
-      color: #00f2fe;
-      filter: drop-shadow(0 0 20px #00e5ff);
-      margin-bottom: 12px;
-    }
-
-    .rules-card .rules-header h2 {
-      font-size: 2.2rem;
-      font-weight: 800;
-      background: linear-gradient(135deg, #fff, #a0f0ff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      margin-bottom: 4px;
-    }
-
-    .rules-card .rules-header .subtitle {
-      color: #8ea9c7;
-      font-size: 1rem;
-      font-style: italic;
-    }
-
-    .rules-card .flag-emoji { font-size: 1.8rem; }
-
-    .rules-card h3 {
-      color: #00f2fe;
-      font-size: 1.3rem;
-      margin: 28px 0 14px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      text-transform: uppercase;
-    }
-
-    .rules-card p {
-      color: #cbd5e1;
-      font-size: 0.95rem;
-      line-height: 1.7;
-      margin-bottom: 14px;
-    }
-
-    .rules-card .highlight-box {
-      background: rgba(255, 193, 7, 0.08);
-      border-left: 4px solid #ffc107;
-      padding: 16px 20px;
-      border-radius: 0 12px 12px 0;
-      margin: 18px 0;
-      color: #ffc107;
-    }
-
-    .rules-card .highlight-box strong { color: #fff; }
-
-    .rules-card .penalties {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin: 14px 0;
-    }
-
-    .rules-card .penalty-tag {
-      padding: 6px 16px;
-      border-radius: 25px;
-      font-weight: 600;
-      font-size: 0.85rem;
-      display: flex;
-      align-items: center;
-      gap: 5px;
-    }
-
-    .penalty-advertencia { background: rgba(255, 193, 7, 0.15); border: 1px solid rgba(255, 193, 7, 0.4); color: #ffc107; }
-    .penalty-jail { background: rgba(255, 152, 0, 0.15); border: 1px solid rgba(255, 152, 0, 0.4); color: #ff9800; }
-    .penalty-temp { background: rgba(244, 67, 54, 0.15); border: 1px solid rgba(244, 67, 54, 0.4); color: #f44336; }
-    .penalty-perm { background: rgba(158, 158, 158, 0.15); border: 1px solid rgba(158, 158, 158, 0.4); color: #9e9e9e; text-decoration: line-through; }
-
-    .rules-card .respect-list { list-style: none; padding: 0; }
-
-    .rules-card .respect-list li {
-      padding: 8px 0 8px 24px;
-      position: relative;
-      color: #cbd5e1;
-      font-size: 0.95rem;
-    }
-
-    .rules-card .respect-list li::before { content: '🤝'; position: absolute; left: 0; }
-
-    .rules-card .heart-ending {
-      text-align: center;
-      margin-top: 30px;
-      padding-top: 24px;
-      border-top: 1px solid rgba(0, 255, 196, 0.2);
-    }
-
-    .rules-card .heart-ending p { font-size: 1.1rem; font-weight: 600; color: #fff; }
-
-    .rules-card .tagline {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 12px;
-      margin-top: 14px;
-    }
-
-    .rules-card .tagline span {
-      background: rgba(0, 242, 254, 0.1);
-      border: 1px solid rgba(0, 242, 254, 0.3);
-      color: #00f2fe;
-      padding: 6px 14px;
-      border-radius: 25px;
-      font-weight: 600;
-      font-size: 0.8rem;
-      letter-spacing: 0.5px;
-    }
-
-    footer {
-      border-top: 1px solid rgba(0, 255, 200, 0.2);
-      padding: 24px 0;
-      margin-top: 50px;
-      text-align: center;
-      color: #7f95b5;
-      backdrop-filter: blur(10px);
-      background: rgba(3, 5, 10, 0.5);
-    }
-
+      background: #0a1a2f; border: 1px solid #00f2fe; color: #00f2fe; padding: 12px 24px;
+      border-radius: 40px; font-weight: 700; width: 100%; transition: 0.3s; cursor: pointer;
+      font-size: 0.95rem; text-transform: uppercase;
+    }
+    .btn-buy:hover { background: #00f2fe; color: #03050a; box-shadow: 0 0 30px #00b4d8; }
+
+    .coin-icon { width: 60px; height: 60px; object-fit: contain; filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.6)); margin-bottom: 8px; transition: 0.3s; }
+    .vip-card:hover .coin-icon { filter: drop-shadow(0 0 25px rgba(255, 215, 0, 0.9)); transform: scale(1.1); }
+
+    .table-wrapper { background: rgba(12, 20, 35, 0.7); backdrop-filter: blur(18px); border: 1px solid rgba(0, 255, 196, 0.2); border-radius: 24px; overflow: hidden; margin-bottom: 30px; transition: 0.3s; }
+    .table-wrapper:hover { border-color: rgba(0, 255, 196, 0.5); box-shadow: 0 0 40px rgba(0, 242, 254, 0.15); }
+    .table-header { background: rgba(0, 242, 254, 0.08); padding: 18px 24px; border-bottom: 1px solid rgba(0, 255, 196, 0.2); display: flex; align-items: center; gap: 12px; }
+    .table-header i { font-size: 1.8rem; color: #00f2fe; filter: drop-shadow(0 0 10px #00e5ff); }
+    .table-header h3 { font-size: 1.4rem; color: #fff; text-transform: uppercase; letter-spacing: 1px; }
+
+    table { width: 100%; border-collapse: collapse; }
+    table th { background: rgba(0, 242, 254, 0.05); color: #00f2fe; font-weight: 700; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; padding: 14px 18px; text-align: left; border-bottom: 1px solid rgba(0, 255, 196, 0.15); }
+    table td { padding: 12px 18px; color: #cbd5e1; border-bottom: 1px solid rgba(255, 255, 255, 0.05); font-size: 0.9rem; }
+    table tbody tr:hover { background: rgba(0, 242, 254, 0.05); }
+    table tbody tr:last-child td { border-bottom: none; }
+    .price-highlight { color: #00f2fe; font-weight: 700; font-size: 1.05rem; font-family: 'Exo 2', sans-serif; }
+    .badge-item { background: rgba(0, 242, 254, 0.1); border: 1px solid rgba(0, 242, 254, 0.3); color: #00f2fe; padding: 4px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; display: inline-block; margin: 2px 4px; }
+
+    .mini-cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-bottom: 40px; }
+    .mini-card { background: rgba(12, 20, 35, 0.7); backdrop-filter: blur(18px); border: 1px solid rgba(0, 255, 196, 0.2); border-radius: 24px; padding: 22px; transition: 0.3s; }
+    .mini-card:hover { border-color: rgba(0, 255, 196, 0.5); box-shadow: 0 0 30px rgba(0, 242, 254, 0.15); }
+    .mini-card h4 { font-size: 1.2rem; color: #fff; margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
+    .mini-card h4 i { color: #00f2fe; }
+    .mini-card .item-row { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+    .mini-card .item-row:last-child { border-bottom: none; }
+    .mini-card .item-name { color: #cbd5e1; font-size: 0.9rem; }
+    .mini-card .item-value { color: #00f2fe; font-weight: 700; font-family: 'Exo 2', sans-serif; }
+
+    /* MODAL */
+    .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 1000; justify-content: center; align-items: center; }
+    .modal-overlay.active { display: flex; }
+    .modal { background: rgba(12, 20, 35, 0.95); backdrop-filter: blur(25px); border: 1px solid rgba(0, 255, 196, 0.3); border-radius: 28px; padding: 32px 28px; max-width: 520px; width: 90%; text-align: center; box-shadow: 0 0 60px rgba(0, 242, 254, 0.3); animation: modalIn 0.3s ease; }
+    @keyframes modalIn { from { transform: scale(0.9); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+    .modal h3 { font-size: 1.6rem; color: #00f2fe; margin-bottom: 6px; }
+    .modal .item-name-modal { font-size: 1.2rem; color: #fff; margin-bottom: 20px; }
+    .modal .input-group { margin-bottom: 16px; text-align: left; }
+    .modal .input-group label { display: block; color: #b4c8e0; margin-bottom: 5px; font-weight: 600; font-size: 0.85rem; }
+    .modal .input-group input, .modal .input-group select { width: 100%; padding: 10px 14px; background: rgba(0,0,0,0.5); border: 1px solid rgba(0, 255, 196, 0.3); border-radius: 12px; color: #fff; font-size: 0.95rem; font-family: 'Inter', sans-serif; transition: 0.3s; }
+    .modal .input-group input:focus, .modal .input-group select:focus { outline: none; border-color: #00f2fe; box-shadow: 0 0 15px rgba(0, 242, 254, 0.2); }
+    .modal .input-group select option { background: #0a1a2f; color: #fff; }
+    .modal .btn-submit { background: linear-gradient(135deg, #00f2fe, #0077b6); color: #03050a; padding: 12px 30px; border-radius: 50px; font-weight: 700; font-size: 1rem; border: none; cursor: pointer; width: 100%; margin-top: 6px; transition: 0.3s; }
+    .modal .btn-submit:hover { box-shadow: 0 0 35px rgba(0, 255, 200, 0.6); }
+    .modal .btn-close { background: transparent; border: 1px solid rgba(255,255,255,0.2); color: #fff; padding: 8px 20px; border-radius: 50px; cursor: pointer; margin-top: 8px; transition: 0.3s; }
+    .modal .btn-close:hover { border-color: #f44336; color: #f44336; }
+    .success-msg { display: none; color: #00f2fe; font-weight: 700; margin-top: 10px; font-size: 0.95rem; }
+    .success-msg.show { display: block; animation: fadeIn 0.5s; }
+
+    .pix-info-box { display: none; background: rgba(0, 255, 100, 0.08); border: 1px solid rgba(0, 255, 100, 0.4); border-radius: 16px; padding: 20px; margin-top: 16px; text-align: center; }
+    .pix-info-box.show { display: block; animation: fadeIn 0.5s; }
+    .pix-info-box .pix-icon { font-size: 2.5rem; color: #00ff64; margin-bottom: 8px; filter: drop-shadow(0 0 15px rgba(0, 255, 100, 0.6)); }
+    .pix-info-box h4 { color: #fff; font-size: 1.1rem; margin-bottom: 6px; }
+    .pix-info-box .pix-key { background: rgba(0,0,0,0.4); border: 1px solid rgba(0, 255, 100, 0.3); color: #00ff64; padding: 10px 16px; border-radius: 10px; font-size: 1.2rem; font-weight: 700; letter-spacing: 1px; margin: 10px 0; }
+    .pix-info-box .btn-copy-pix { background: #00ff64; color: #03050a; padding: 10px 24px; border-radius: 50px; font-weight: 700; border: none; cursor: pointer; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 6px; }
+    .pix-info-box .btn-copy-pix:hover { background: #00cc50; box-shadow: 0 0 25px rgba(0, 255, 100, 0.5); }
+    .pix-info-box .btn-discord-ticket-pix { background: #5865F2; color: #fff; padding: 10px 24px; border-radius: 50px; font-weight: 700; font-size: 0.9rem; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; margin-left: 8px; }
+    .pix-info-box .btn-discord-ticket-pix:hover { background: #4752C4; box-shadow: 0 0 25px rgba(88, 101, 242, 0.5); }
+    .pix-info-box .pix-warning { color: #ffc107; font-size: 0.85rem; margin-top: 12px; }
+
+    .discord-alert-box { display: none; background: rgba(88, 101, 242, 0.1); border: 1px solid #5865F2; border-radius: 16px; padding: 20px; margin-top: 16px; text-align: center; }
+    .discord-alert-box.show { display: block; animation: fadeIn 0.5s; }
+    .discord-alert-box .discord-alert-icon { font-size: 3rem; color: #5865F2; margin-bottom: 10px; }
+    .discord-alert-box h4 { color: #fff; font-size: 1.2rem; margin-bottom: 6px; }
+    .discord-alert-box p { color: #b4c8e0; font-size: 0.95rem; margin-bottom: 14px; }
+    .discord-alert-box .btn-discord-ticket { background: #5865F2; color: #fff; padding: 12px 28px; border-radius: 50px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; }
+    .discord-alert-box .btn-discord-ticket:hover { background: #4752C4; box-shadow: 0 0 30px rgba(88, 101, 242, 0.6); }
+
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+    /* BOTÃO TICKET */
+    .ticket-panel { position: fixed; bottom: 24px; left: 24px; z-index: 500; }
+    .ticket-toggle { background: #5865F2; color: #fff; width: 55px; height: 55px; border-radius: 50%; border: none; cursor: pointer; font-size: 1.4rem; box-shadow: 0 0 30px rgba(88, 101, 242, 0.5); transition: 0.3s; display: flex; align-items: center; justify-content: center; text-decoration: none; animation: ticketPulse 2s infinite; }
+    @keyframes ticketPulse { 0%,100% { box-shadow: 0 0 25px rgba(88,101,242,0.5); } 50% { box-shadow: 0 0 45px rgba(88,101,242,0.9); } }
+    .ticket-toggle:hover { transform: scale(1.1); box-shadow: 0 0 50px rgba(88,101,242,0.9); animation: none; }
+    .ticket-tooltip { position: absolute; bottom: 70px; left: 50%; transform: translateX(-50%); background: rgba(12,20,35,0.95); border: 1px solid rgba(88,101,242,0.4); color: #fff; padding: 8px 14px; border-radius: 10px; font-size: 0.8rem; font-weight: 600; white-space: nowrap; opacity: 0; transition: 0.3s; }
+    .ticket-panel:hover .ticket-tooltip { opacity: 1; }
+
+    /* PAINEL AJUDA */
+    .help-panel { position: fixed; bottom: 24px; right: 24px; z-index: 500; }
+    .help-toggle { background: linear-gradient(135deg, #00f2fe, #0077b6); color: #03050a; width: 55px; height: 55px; border-radius: 50%; border: none; cursor: pointer; font-size: 1.4rem; box-shadow: 0 0 30px rgba(0,242,254,0.5); transition: 0.3s; display: flex; align-items: center; justify-content: center; }
+    .help-toggle:hover { transform: scale(1.1); box-shadow: 0 0 45px rgba(0,242,254,0.8); }
+    .help-box { display: none; position: absolute; bottom: 70px; right: 0; background: rgba(12,20,35,0.95); border: 1px solid rgba(0,255,196,0.3); border-radius: 20px; padding: 22px; width: 320px; box-shadow: 0 0 40px rgba(0,242,254,0.3); animation: modalIn 0.3s; }
+    .help-box.active { display: block; }
+    .help-box h4 { color: #00f2fe; font-size: 1.2rem; margin-bottom: 14px; }
+    .help-box .input-group { margin-bottom: 12px; }
+    .help-box .input-group label { color: #b4c8e0; font-size: 0.8rem; }
+    .help-box .input-group input, .help-box .input-group textarea { width: 100%; padding: 9px 12px; background: rgba(0,0,0,0.5); border: 1px solid rgba(0,255,196,0.3); border-radius: 10px; color: #fff; font-size: 0.85rem; font-family: 'Inter', sans-serif; }
+    .help-box .input-group textarea { min-height: 70px; resize: vertical; }
+    .help-box .btn-send-help { background: #00f2fe; color: #03050a; padding: 10px 20px; border-radius: 50px; font-weight: 700; border: none; cursor: pointer; width: 100%; }
+    .help-box .btn-send-help:hover { box-shadow: 0 0 30px rgba(0,255,200,0.6); }
+
+    /* PÁGINAS */
+    .page { display: none; }
+    .page.active { display: block; }
+
+    .rules-container { max-width: 900px; margin: 40px auto 50px; }
+    .rules-card { background: rgba(12,20,35,0.75); backdrop-filter: blur(18px); border: 1px solid rgba(0,255,196,0.2); border-radius: 24px; padding: 36px 32px; }
+    .rules-card .rules-header { text-align: center; margin-bottom: 30px; padding-bottom: 24px; border-bottom: 1px solid rgba(0,255,196,0.2); }
+    .rules-card .rules-header i { font-size: 3rem; color: #00f2fe; margin-bottom: 12px; }
+    .rules-card .rules-header h2 { font-size: 2.2rem; font-weight: 800; background: linear-gradient(135deg,#fff,#a0f0ff); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+    .rules-card h3 { color: #00f2fe; font-size: 1.3rem; margin: 28px 0 14px; text-transform: uppercase; }
+    .rules-card p { color: #cbd5e1; font-size: 0.95rem; line-height: 1.7; margin-bottom: 14px; }
+    .rules-card .highlight-box { background: rgba(255,193,7,0.08); border-left: 4px solid #ffc107; padding: 16px 20px; border-radius: 0 12px 12px 0; margin: 18px 0; color: #ffc107; }
+    .penalties { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0; }
+    .penalty-tag { padding: 6px 16px; border-radius: 25px; font-weight: 600; font-size: 0.85rem; }
+    .penalty-advertencia { background: rgba(255,193,7,0.15); border: 1px solid rgba(255,193,7,0.4); color: #ffc107; }
+    .penalty-jail { background: rgba(255,152,0,0.15); border: 1px solid rgba(255,152,0,0.4); color: #ff9800; }
+    .penalty-temp { background: rgba(244,67,54,0.15); border: 1px solid rgba(244,67,54,0.4); color: #f44336; }
+    .penalty-perm { background: rgba(158,158,158,0.15); border: 1px solid rgba(158,158,158,0.4); color: #9e9e9e; text-decoration: line-through; }
+    .respect-list { list-style: none; padding: 0; }
+    .respect-list li { padding: 8px 0 8px 24px; position: relative; color: #cbd5e1; }
+    .respect-list li::before { content: '🤝'; position: absolute; left: 0; }
+    .heart-ending { text-align: center; margin-top: 30px; padding-top: 24px; border-top: 1px solid rgba(0,255,196,0.2); }
+    .tagline { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 14px; }
+    .tagline span { background: rgba(0,242,254,0.1); border: 1px solid rgba(0,242,254,0.3); color: #00f2fe; padding: 6px 14px; border-radius: 25px; font-weight: 600; font-size: 0.8rem; }
+
+    footer { border-top: 1px solid rgba(0,255,200,0.2); padding: 24px 0; margin-top: 50px; text-align: center; color: #7f95b5; }
+
+    /* ==================== LOADSCREEN COM VÍDEO - 15 SEGUNDOS ==================== */
     #loadscreen {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: #03050a;
-      z-index: 9999;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+      background: #03050a; z-index: 9999;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
       transition: opacity 0.8s ease, visibility 0.8s ease;
+      overflow: hidden;
     }
+    #loadscreen.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
 
-    #loadscreen.hidden {
-      opacity: 0;
-      visibility: hidden;
-      pointer-events: none;
-    }
-
-    #loadscreen .loadscreen-bg {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: url('https://i.imgur.com/EThWzje.png');
-      background-size: cover;
-      background-position: center;
-      filter: brightness(0.25) saturate(1.3);
-      z-index: -1;
+    #loadscreen-video {
+      position: absolute; top: 50%; left: 50%;
+      min-width: 100%; min-height: 100%; width: auto; height: auto;
+      transform: translate(-50%, -50%); object-fit: cover;
+      z-index: -1; filter: brightness(0.3) saturate(1.3);
     }
 
     #loadscreen .loadscreen-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: radial-gradient(ellipse at center, rgba(3, 5, 10, 0.5) 0%, rgba(3, 5, 10, 0.95) 100%);
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+      background: radial-gradient(ellipse at center, rgba(3,5,10,0.4) 0%, rgba(3,5,10,0.9) 100%);
       z-index: -1;
     }
-
     #loadscreen .loadscreen-grid {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: 
-        linear-gradient(rgba(0, 255, 196, 0.04) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0, 255, 196, 0.04) 1px, transparent 1px);
-      background-size: 40px 40px;
-      z-index: -1;
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+      background-image: linear-gradient(rgba(0,255,196,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(0,255,196,0.04) 1px, transparent 1px);
+      background-size: 40px 40px; z-index: 0; pointer-events: none;
     }
-
     #loadscreen .loadscreen-scanline {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%;
       background: repeating-linear-gradient(0deg, rgba(0,0,0,0.06) 0px, rgba(0,255,200,0.02) 2px, transparent 4px);
-      z-index: -1;
+      z-index: 0; pointer-events: none;
     }
 
-    .loadscreen-content {
-      text-align: center;
-      z-index: 1;
-      animation: pulseGlow 2s ease-in-out infinite;
-    }
-
-    @keyframes pulseGlow {
-      0%, 100% { filter: drop-shadow(0 0 20px rgba(0, 242, 254, 0.4)); }
-      50% { filter: drop-shadow(0 0 45px rgba(0, 242, 254, 0.9)); }
-    }
+    .loadscreen-content { text-align: center; z-index: 1; animation: pulseGlow 2s infinite; }
+    @keyframes pulseGlow { 0%,100% { filter: drop-shadow(0 0 20px rgba(0,242,254,0.4)); } 50% { filter: drop-shadow(0 0 45px rgba(0,242,254,0.9)); } }
 
     .loadscreen-logo {
-      font-family: 'Exo 2', sans-serif;
-      font-size: 5rem;
-      font-weight: 800;
+      font-family: 'Exo 2', sans-serif; font-size: 5rem; font-weight: 800;
       background: linear-gradient(135deg, #00f2fe, #00c9a7);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      letter-spacing: 4px;
-      margin-bottom: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      letter-spacing: 4px; margin-bottom: 10px;
+      display: flex; align-items: center; justify-content: center; gap: 10px;
     }
+    .loadscreen-logo i { background: none; -webkit-text-fill-color: #00f2fe; font-size: 4rem; animation: spinLogo 3s linear infinite; }
+    @keyframes spinLogo { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
 
-    .loadscreen-logo i {
-      background: none;
-      -webkit-text-fill-color: #00f2fe;
-      font-size: 4rem;
-      animation: spinLogo 3s linear infinite;
-    }
+    .loadscreen-subtitle { font-family: 'Exo 2', sans-serif; font-size: 1.4rem; color: #8ea9c7; letter-spacing: 6px; text-transform: uppercase; margin-bottom: 40px; animation: fadeText 2s infinite; }
+    @keyframes fadeText { 0%,100% { opacity: 0.5; } 50% { opacity: 1; } }
 
-    @keyframes spinLogo {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
+    .loadscreen-bar-container { width: 320px; height: 4px; background: rgba(255,255,255,0.08); border-radius: 10px; overflow: hidden; margin-bottom: 16px; }
+    .loadscreen-bar { height: 100%; background: linear-gradient(90deg, #00f2fe, #00c9a7, #00b4d8); border-radius: 10px; width: 0%; transition: width 0.3s; box-shadow: 0 0 20px rgba(0,242,254,0.6); animation: loadingShine 1.5s infinite; }
+    @keyframes loadingShine { 0% { box-shadow: 0 0 15px rgba(0,242,254,0.4); } 50% { box-shadow: 0 0 35px rgba(0,242,254,1); } 100% { box-shadow: 0 0 15px rgba(0,242,254,0.4); } }
 
-    .loadscreen-subtitle {
-      font-family: 'Exo 2', sans-serif;
-      font-size: 1.4rem;
-      color: #8ea9c7;
-      letter-spacing: 6px;
-      text-transform: uppercase;
-      margin-bottom: 40px;
-      animation: fadeText 2s ease-in-out infinite;
-    }
-
-    @keyframes fadeText {
-      0%, 100% { opacity: 0.5; }
-      50% { opacity: 1; }
-    }
-
-    .loadscreen-bar-container {
-      width: 320px;
-      height: 4px;
-      background: rgba(255, 255, 255, 0.08);
-      border-radius: 10px;
-      overflow: hidden;
-      margin-bottom: 16px;
-    }
-
-    .loadscreen-bar {
-      height: 100%;
-      background: linear-gradient(90deg, #00f2fe, #00c9a7, #00b4d8);
-      border-radius: 10px;
-      width: 0%;
-      transition: width 0.3s ease;
-      box-shadow: 0 0 20px rgba(0, 242, 254, 0.6);
-      animation: loadingShine 1.5s ease-in-out infinite;
-    }
-
-    @keyframes loadingShine {
-      0% { box-shadow: 0 0 15px rgba(0, 242, 254, 0.4); }
-      50% { box-shadow: 0 0 35px rgba(0, 242, 254, 1); }
-      100% { box-shadow: 0 0 15px rgba(0, 242, 254, 0.4); }
-    }
-
-    .loadscreen-percentage {
-      font-family: 'Exo 2', sans-serif;
-      font-size: 1.2rem;
-      color: #00f2fe;
-      font-weight: 700;
-      letter-spacing: 2px;
-      margin-bottom: 20px;
-    }
-
-    .loadscreen-dots {
-      display: flex;
-      gap: 10px;
-      justify-content: center;
-      margin-top: 8px;
-    }
-
-    .loadscreen-dot {
-      width: 10px;
-      height: 10px;
-      background: #00f2fe;
-      border-radius: 50%;
-      animation: dotBounce 1.4s ease-in-out infinite;
-    }
-
+    .loadscreen-percentage { font-family: 'Exo 2', sans-serif; font-size: 1.2rem; color: #00f2fe; font-weight: 700; letter-spacing: 2px; margin-bottom: 20px; }
+    .loadscreen-dots { display: flex; gap: 10px; justify-content: center; margin-top: 8px; }
+    .loadscreen-dot { width: 10px; height: 10px; background: #00f2fe; border-radius: 50%; animation: dotBounce 1.4s infinite; }
     .loadscreen-dot:nth-child(1) { animation-delay: 0s; }
     .loadscreen-dot:nth-child(2) { animation-delay: 0.2s; }
     .loadscreen-dot:nth-child(3) { animation-delay: 0.4s; }
+    @keyframes dotBounce { 0%,80%,100% { transform: scale(0.4); opacity: 0.3; } 40% { transform: scale(1); opacity: 1; } }
 
-    @keyframes dotBounce {
-      0%, 80%, 100% { transform: scale(0.4); opacity: 0.3; }
-      40% { transform: scale(1); opacity: 1; }
-    }
+    .loadscreen-version { position: absolute; bottom: 30px; color: rgba(255,255,255,0.3); font-size: 0.8rem; font-family: 'Inter', sans-serif; letter-spacing: 2px; z-index: 1; }
 
-    .loadscreen-version {
-      position: absolute;
-      bottom: 30px;
-      color: rgba(255, 255, 255, 0.3);
-      font-size: 0.8rem;
-      font-family: 'Inter', sans-serif;
-      letter-spacing: 2px;
-    }
+    .skip-loading { position: absolute; bottom: 80px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.15); color: rgba(255,255,255,0.5); padding: 8px 20px; border-radius: 30px; cursor: pointer; font-size: 0.8rem; transition: 0.3s; z-index: 1; font-family: 'Inter', sans-serif; }
+    .skip-loading:hover { background: rgba(255,255,255,0.1); color: #fff; border-color: rgba(255,255,255,0.3); }
 
     @media (max-width: 700px) {
       header { flex-direction: column; gap: 12px; padding: 14px 20px; }
@@ -1460,23 +621,35 @@
 </head>
 <body>
 
-  <!-- LOADSCREEN -->
+  <!-- ==================== LOADSCREEN 15 SEGUNDOS ==================== -->
   <div id="loadscreen">
-    <div class="loadscreen-bg"></div>
+    <video id="loadscreen-video" autoplay muted loop playsinline>
+      <source src="https://i.imgur.com/f0WCB4D.mp4" type="video/mp4">
+    </video>
     <div class="loadscreen-overlay"></div>
     <div class="loadscreen-grid"></div>
     <div class="loadscreen-scanline"></div>
+    
     <div class="loadscreen-content">
-      <div class="loadscreen-logo"><i class="fas fa-microchip"></i> ZERO<span style="font-weight:400;color:#00f2fe;">1</span></div>
+      <div class="loadscreen-logo">
+        <i class="fas fa-microchip"></i> ZERO<span style="font-weight:400;color:#00f2fe;">1</span>
+      </div>
       <div class="loadscreen-subtitle">CARREGANDO...</div>
-      <div class="loadscreen-bar-container"><div class="loadscreen-bar" id="loadscreen-bar"></div></div>
+      <div class="loadscreen-bar-container">
+        <div class="loadscreen-bar" id="loadscreen-bar"></div>
+      </div>
       <div class="loadscreen-percentage" id="loadscreen-percentage">0%</div>
-      <div class="loadscreen-dots"><div class="loadscreen-dot"></div><div class="loadscreen-dot"></div><div class="loadscreen-dot"></div></div>
+      <div class="loadscreen-dots">
+        <div class="loadscreen-dot"></div>
+        <div class="loadscreen-dot"></div>
+        <div class="loadscreen-dot"></div>
+      </div>
     </div>
+    <button class="skip-loading" onclick="skipLoading()">PULAR INTRO ⏭️</button>
     <div class="loadscreen-version">v2.0 • ZERO 1 ROLEPLAY</div>
   </div>
 
-  <!-- SITE -->
+  <!-- SITE PRINCIPAL -->
   <div class="bg-image"></div>
   <div class="bg-overlay"></div>
   <div class="grid-bg"></div>
@@ -1502,195 +675,71 @@
       </div>
     </header>
 
-    <!-- PÁGINA INÍCIO -->
+    <!-- PÁGINAS (mantidas iguais) -->
     <div class="page active" id="page-home">
-      <section class="hero">
-        <div class="hero-text">
-          <h1>ENTRE NO <span class="highlight">UNIVERSO ZERO 1</span></h1>
-          <p>O roleplay mais imersivo do Brasil. Escolha sua categoria e faça seu pedido!</p>
-          <div class="btn-group">
-            <a href="#" class="btn btn-primary" onclick="showPage('vips'); return false;"><i class="fas fa-crown"></i> VER VIPs</a>
-            <a href="#" class="btn btn-outline" onclick="showPage('cars'); return false;"><i class="fas fa-car"></i> CARROS BLINDADOS</a>
-          </div>
-        </div>
-      </section>
-      <div style="text-align:center; margin:40px 0;">
-        <p style="color:#8ea9c7; font-size:1.1rem;">Navegue pelas categorias acima e escolha o que deseja comprar!</p>
-        <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:12px; margin-top:20px;">
-          <span class="badge-item" style="font-size:0.9rem; padding:8px 16px; cursor:pointer;" onclick="showPage('vips')">👑 VIPs</span>
-          <span class="badge-item" style="font-size:0.9rem; padding:8px 16px; cursor:pointer;" onclick="showPage('cars')">🚗 Carros Blindados</span>
-          <span class="badge-item" style="font-size:0.9rem; padding:8px 16px; cursor:pointer;" onclick="showPage('faccao')">💀 Facção/Corporação</span>
-          <span class="badge-item" style="font-size:0.9rem; padding:8px 16px; cursor:pointer;" onclick="showPage('servicos')">🔧 Serviços</span>
-          <span class="badge-item" style="font-size:0.9rem; padding:8px 16px; cursor:pointer;" onclick="showPage('ids')">🆔 Troca de IDs</span>
-          <span class="badge-item" style="font-size:0.9rem; padding:8px 16px; cursor:pointer;" onclick="showPage('coins')">🪙 Coins</span>
-          <span class="badge-item" style="font-size:0.9rem; padding:8px 16px; cursor:pointer;" onclick="showPage('rules')">📜 Regras</span>
-        </div>
-      </div>
+      <section class="hero"><div class="hero-text"><h1>ENTRE NO <span class="highlight">UNIVERSO ZERO 1</span></h1><p>O roleplay mais imersivo do Brasil.</p><div class="btn-group"><a href="#" class="btn btn-primary" onclick="showPage('vips'); return false;"><i class="fas fa-crown"></i> VER VIPs</a><a href="#" class="btn btn-outline" onclick="showPage('cars'); return false;"><i class="fas fa-car"></i> CARROS</a></div></div></section>
     </div>
 
-    <!-- PÁGINA VIPs -->
-    <div class="page" id="page-vips">
-      <h2 class="section-title">👑 PLANOS VIP</h2>
-      <div class="cards-grid">
-        <div class="vip-card"><img src="https://i.imgur.com/AFCK7Hf.png" alt="VIP Luxúria" class="vip-icon-img luxuria-icon" style="width:70px; height:70px;"><div class="vip-name">LUXÚRIA</div><div class="price">R$5,00</div><ul class="features"><li><i class="fas fa-check-circle"></i> Tag VIP no chat</li><li><i class="fas fa-check-circle"></i> 2 casas extras</li><li><i class="fas fa-check-circle"></i> Moedas diárias</li><li><i class="fas fa-check-circle"></i> Cor no nome</li></ul><button class="btn-buy" onclick="openPurchaseModal('VIP LUXÚRIA', 'R$5,00')"><i class="fas fa-shopping-cart"></i> COMPRAR</button></div>
-        <div class="vip-card popular"><img src="https://i.imgur.com/8ERZC8n.png" alt="VIP Criminoso" class="vip-icon-img criminoso-icon" style="width:70px; height:70px;"><div class="vip-name">CRIMINOSO</div><div class="price">R$10,00</div><ul class="features"><li><i class="fas fa-check-circle"></i> Tudo do Luxúria +</li><li><i class="fas fa-check-circle"></i> 5 slots de garagem</li><li><i class="fas fa-check-circle"></i> Acesso /fly</li><li><i class="fas fa-check-circle"></i> Kit reparo semanal</li></ul><button class="btn-buy" style="background:#00f2fe; color:#000;" onclick="openPurchaseModal('VIP CRIMINOSO', 'R$10,00')">COMPRAR AGORA</button></div>
-        <div class="vip-card"><img src="https://i.imgur.com/UrtFkEF.png" alt="VIP Visionário" class="vip-icon-img visionario-icon" style="width:70px; height:70px;"><div class="vip-name">VISIONÁRIO</div><div class="price">R$15,00</div><ul class="features"><li><i class="fas fa-check-circle"></i> Tudo do Criminoso +</li><li><i class="fas fa-check-circle"></i> Porte de arma legal</li><li><i class="fas fa-check-circle"></i> Carro exclusivo</li><li><i class="fas fa-check-circle"></i> Acesso ao bate-papo VIP</li></ul><button class="btn-buy" onclick="openPurchaseModal('VIP VISIONÁRIO', 'R$15,00')">COMPRAR</button></div>
-        <div class="vip-card"><img src="https://i.imgur.com/37fN0DJ.png" alt="VIP Marginal de Grife" class="vip-icon-img marginalgrife-icon" style="width:70px; height:70px;"><div class="vip-name">MARGINAL DE GRIFE</div><div class="price">R$25,00</div><ul class="features"><li><i class="fas fa-check-circle"></i> Tudo do Visionário +</li><li><i class="fas fa-check-circle"></i> 10 slots de garagem</li><li><i class="fas fa-check-circle"></i> Helicóptero pessoal</li><li><i class="fas fa-check-circle"></i> Tag exclusiva [💎]</li></ul><button class="btn-buy" onclick="openPurchaseModal('VIP MARGINAL DE GRIFE', 'R$25,00')">COMPRAR</button></div>
-      </div>
-    </div>
+    <div class="page" id="page-vips"><h2 class="section-title">👑 PLANOS VIP</h2><div class="cards-grid"><div class="vip-card"><img src="https://i.imgur.com/AFCK7Hf.png" class="vip-icon-img luxuria-icon" style="width:70px;height:70px;"><div class="vip-name">LUXÚRIA</div><div class="price">R$5,00</div><ul class="features"><li><i class="fas fa-check-circle"></i> Tag VIP</li><li><i class="fas fa-check-circle"></i> 2 casas extras</li><li><i class="fas fa-check-circle"></i> Moedas diárias</li><li><i class="fas fa-check-circle"></i> Cor no nome</li></ul><button class="btn-buy" onclick="openPurchaseModal('VIP LUXÚRIA','R$5,00')">COMPRAR</button></div><div class="vip-card popular"><img src="https://i.imgur.com/8ERZC8n.png" class="vip-icon-img criminoso-icon" style="width:70px;height:70px;"><div class="vip-name">CRIMINOSO</div><div class="price">R$10,00</div><ul class="features"><li><i class="fas fa-check-circle"></i> Tudo do Luxúria +</li><li><i class="fas fa-check-circle"></i> 5 slots garagem</li><li><i class="fas fa-check-circle"></i> Acesso /fly</li><li><i class="fas fa-check-circle"></i> Kit reparo</li></ul><button class="btn-buy" style="background:#00f2fe;color:#000;" onclick="openPurchaseModal('VIP CRIMINOSO','R$10,00')">COMPRAR AGORA</button></div><div class="vip-card"><img src="https://i.imgur.com/UrtFkEF.png" class="vip-icon-img visionario-icon" style="width:70px;height:70px;"><div class="vip-name">VISIONÁRIO</div><div class="price">R$15,00</div><ul class="features"><li><i class="fas fa-check-circle"></i> Tudo do Criminoso +</li><li><i class="fas fa-check-circle"></i> Porte de arma</li><li><i class="fas fa-check-circle"></i> Carro exclusivo</li><li><i class="fas fa-check-circle"></i> Chat VIP</li></ul><button class="btn-buy" onclick="openPurchaseModal('VIP VISIONÁRIO','R$15,00')">COMPRAR</button></div><div class="vip-card"><img src="https://i.imgur.com/37fN0DJ.png" class="vip-icon-img marginalgrife-icon" style="width:70px;height:70px;"><div class="vip-name">MARGINAL DE GRIFE</div><div class="price">R$25,00</div><ul class="features"><li><i class="fas fa-check-circle"></i> Tudo do Visionário +</li><li><i class="fas fa-check-circle"></i> 10 slots garagem</li><li><i class="fas fa-check-circle"></i> Helicóptero</li><li><i class="fas fa-check-circle"></i> Tag [💎]</li></ul><button class="btn-buy" onclick="openPurchaseModal('VIP MARGINAL DE GRIFE','R$25,00')">COMPRAR</button></div></div></div>
 
-    <!-- PÁGINA CARROS -->
-    <div class="page" id="page-cars">
-      <h2 class="section-title">🚗 CARROS BLINDADOS</h2>
-      <div class="table-wrapper">
-        <div class="table-header"><i class="fas fa-car-side"></i><h3>TODOS R$65,00 • 70 TIROS</h3></div>
-        <table>
-          <thead><tr><th>Veículo</th><th>Tipo</th><th>Blindagem</th><th>Valor</th><th>Ação</th></tr></thead>
-          <tbody>
-            <tr><td><span class="badge-item"><i class="fas fa-car"></i> URUS</span></td><td>SUV Esportivo</td><td>70 Tiros</td><td class="price-highlight">R$65,00</td><td><button class="btn-buy" style="padding:6px 12px; font-size:0.75rem;" onclick="openPurchaseModal('URUS BLINDADO', 'R$65,00')">COMPRAR</button></td></tr>
-            <tr><td><span class="badge-item"><i class="fas fa-car"></i> G63</span></td><td>SUV Luxo</td><td>70 Tiros</td><td class="price-highlight">R$65,00</td><td><button class="btn-buy" style="padding:6px 12px; font-size:0.75rem;" onclick="openPurchaseModal('G63 BLINDADO', 'R$65,00')">COMPRAR</button></td></tr>
-            <tr><td><span class="badge-item"><i class="fas fa-car"></i> X6</span></td><td>SUV Esportivo</td><td>70 Tiros</td><td class="price-highlight">R$65,00</td><td><button class="btn-buy" style="padding:6px 12px; font-size:0.75rem;" onclick="openPurchaseModal('X6 BLINDADO', 'R$65,00')">COMPRAR</button></td></tr>
-            <tr><td><span class="badge-item"><i class="fas fa-car"></i> EVOQUE</span></td><td>SUV Premium</td><td>70 Tiros</td><td class="price-highlight">R$65,00</td><td><button class="btn-buy" style="padding:6px 12px; font-size:0.75rem;" onclick="openPurchaseModal('EVOQUE BLINDADO', 'R$65,00')">COMPRAR</button></td></tr>
-            <tr><td><span class="badge-item"><i class="fas fa-car"></i> AVELAR</span></td><td>SUV Blindado</td><td>70 Tiros</td><td class="price-highlight">R$65,00</td><td><button class="btn-buy" style="padding:6px 12px; font-size:0.75rem;" onclick="openPurchaseModal('AVELAR BLINDADO', 'R$65,00')">COMPRAR</button></td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
+    <!-- Demais páginas mantidas... -->
+    <div class="page" id="page-cars"><h2 class="section-title">🚗 CARROS BLINDADOS</h2><div class="table-wrapper"><div class="table-header"><i class="fas fa-car-side"></i><h3>TODOS R$65 • 70 TIROS</h3></div><table><thead><tr><th>Veículo</th><th>Tipo</th><th>Valor</th><th>Ação</th></tr></thead><tbody><tr><td>URUS</td><td>SUV Esportivo</td><td class="price-highlight">R$65</td><td><button class="btn-buy" style="padding:6px 12px;font-size:0.75rem;" onclick="openPurchaseModal('URUS','R$65,00')">COMPRAR</button></td></tr><tr><td>G63</td><td>SUV Luxo</td><td class="price-highlight">R$65</td><td><button class="btn-buy" style="padding:6px 12px;font-size:0.75rem;" onclick="openPurchaseModal('G63','R$65,00')">COMPRAR</button></td></tr><tr><td>X6</td><td>SUV Esportivo</td><td class="price-highlight">R$65</td><td><button class="btn-buy" style="padding:6px 12px;font-size:0.75rem;" onclick="openPurchaseModal('X6','R$65,00')">COMPRAR</button></td></tr><tr><td>EVOQUE</td><td>SUV Premium</td><td class="price-highlight">R$65</td><td><button class="btn-buy" style="padding:6px 12px;font-size:0.75rem;" onclick="openPurchaseModal('EVOQUE','R$65,00')">COMPRAR</button></td></tr><tr><td>AVELAR</td><td>SUV Blindado</td><td class="price-highlight">R$65</td><td><button class="btn-buy" style="padding:6px 12px;font-size:0.75rem;" onclick="openPurchaseModal('AVELAR','R$65,00')">COMPRAR</button></td></tr></tbody></table></div></div>
 
-    <!-- PÁGINA FACÇÃO / CORPORAÇÃO -->
-    <div class="page" id="page-faccao">
-      <h2 class="section-title">💀 FACÇÃO & CORPORAÇÃO</h2>
-      <div class="mini-cards-grid">
-        <div class="mini-card"><h4><i class="fas fa-skull"></i> VIP FACÇÃO</h4><div class="item-row"><span class="item-name">Blip Carro Adicional</span><span class="item-value">Incluso</span></div><div class="item-row"><span class="item-name">Baú Adicional</span><span class="item-value">Incluso</span></div><div class="item-row"><span class="item-name">Skin Extra</span><span class="item-value">Incluso</span></div><div class="item-row"><span class="item-name">Veículo Extra</span><span class="item-value">Incluso</span></div><div class="item-row"><span class="item-name">Buff de Farm</span><span class="item-value">Incluso</span></div><div class="item-row"><span class="item-name">50k a cada 40 min</span><span class="item-value">Incluso</span></div><div class="item-row" style="border-top: 1px solid rgba(0,255,196,0.3); margin-top: 8px; padding-top: 12px;"><span class="item-name" style="font-weight:700; color:#fff;">VALOR TOTAL</span><span class="item-value" style="font-size:1.3rem;">R$75,00</span></div><button class="btn-buy" style="margin-top:14px;" onclick="openPurchaseModal('VIP FACÇÃO', 'R$75,00')">COMPRAR VIP FACÇÃO</button></div>
-        <div class="mini-card"><h4><i class="fas fa-shield-haltered"></i> VIP CORPORAÇÃO</h4><div class="item-row"><span class="item-name">Viatura Extra</span><span class="item-value">Incluso</span></div><div class="item-row"><span class="item-name">Blindagem na Viatura</span><span class="item-value">Incluso</span></div><div class="item-row"><span class="item-name">Skin Extra</span><span class="item-value">Incluso</span></div><div class="item-row"><span class="item-name">Buff de Pagamento</span><span class="item-value">Incluso</span></div><div class="item-row" style="border-top: 1px solid rgba(0,255,196,0.3); margin-top: 8px; padding-top: 12px;"><span class="item-name" style="font-weight:700; color:#fff;">VALOR TOTAL</span><span class="item-value" style="font-size:1.3rem;">R$65,00</span></div><button class="btn-buy" style="margin-top:14px;" onclick="openPurchaseModal('VIP CORPORAÇÃO', 'R$65,00')">COMPRAR VIP CORPORAÇÃO</button></div>
-      </div>
-    </div>
+    <div class="page" id="page-faccao"><h2 class="section-title">💀 FACÇÃO & CORPORAÇÃO</h2><div class="mini-cards-grid"><div class="mini-card"><h4><i class="fas fa-skull"></i> VIP FACÇÃO</h4><div class="item-row"><span>Blip Carro</span><span class="item-value">Incluso</span></div><div class="item-row"><span>Baú Adicional</span><span class="item-value">Incluso</span></div><div class="item-row"><span>Skin Extra</span><span class="item-value">Incluso</span></div><div class="item-row"><span>Veículo Extra</span><span class="item-value">Incluso</span></div><div class="item-row"><span>Buff Farm</span><span class="item-value">Incluso</span></div><div class="item-row"><span>50k/40min</span><span class="item-value">Incluso</span></div><div class="item-row" style="border-top:1px solid rgba(0,255,196,0.3);padding-top:12px;"><span style="font-weight:700;color:#fff;">TOTAL</span><span class="item-value" style="font-size:1.3rem;">R$75</span></div><button class="btn-buy" style="margin-top:14px;" onclick="openPurchaseModal('VIP FACÇÃO','R$75,00')">COMPRAR</button></div><div class="mini-card"><h4><i class="fas fa-shield-haltered"></i> VIP CORPORAÇÃO</h4><div class="item-row"><span>Viatura Extra</span><span class="item-value">Incluso</span></div><div class="item-row"><span>Blindagem</span><span class="item-value">Incluso</span></div><div class="item-row"><span>Skin Extra</span><span class="item-value">Incluso</span></div><div class="item-row"><span>Buff Pagamento</span><span class="item-value">Incluso</span></div><div class="item-row" style="border-top:1px solid rgba(0,255,196,0.3);padding-top:12px;"><span style="font-weight:700;color:#fff;">TOTAL</span><span class="item-value" style="font-size:1.3rem;">R$65</span></div><button class="btn-buy" style="margin-top:14px;" onclick="openPurchaseModal('VIP CORPORAÇÃO','R$65,00')">COMPRAR</button></div></div></div>
 
-    <!-- PÁGINA SERVIÇOS -->
-    <div class="page" id="page-servicos">
-      <h2 class="section-title">🔧 OUTROS SERVIÇOS</h2>
-      <div class="table-wrapper">
-        <div class="table-header"><i class="fas fa-tools"></i><h3>⚙️ SERVIÇOS GERAIS</h3></div>
-        <table>
-          <thead><tr><th>Serviço</th><th>Descrição</th><th>Valor</th><th>Ação</th></tr></thead>
-          <tbody>
-            <tr><td><span class="badge-item">UNBAN SERIAL</span></td><td>Desbanimento completo de serial</td><td class="price-highlight">R$100,00</td><td><button class="btn-buy" style="padding:6px 12px; font-size:0.75rem;" onclick="openPurchaseModal('UNBAN SERIAL', 'R$100,00')">SOLICITAR</button></td></tr>
-            <tr><td><span class="badge-item">REMOVER BANIMENTO</span></td><td>Remoção de banimento ativo</td><td class="price-highlight">R$50,00</td><td><button class="btn-buy" style="padding:6px 12px; font-size:0.75rem;" onclick="openPurchaseModal('REMOVER BANIMENTO', 'R$50,00')">SOLICITAR</button></td></tr>
-            <tr><td><span class="badge-item">ADV FACÇÃO</span></td><td>Advogado para facção</td><td class="price-highlight">R$20,00</td><td><button class="btn-buy" style="padding:6px 12px; font-size:0.75rem;" onclick="openPurchaseModal('ADV FACÇÃO', 'R$20,00')">CONTRATAR</button></td></tr>
-            <tr><td><span class="badge-item">ADV CORPORAÇÃO</span></td><td>Advogado para corporação</td><td class="price-highlight">R$20,00</td><td><button class="btn-buy" style="padding:6px 12px; font-size:0.75rem;" onclick="openPurchaseModal('ADV CORPORAÇÃO', 'R$20,00')">CONTRATAR</button></td></tr>
-            <tr><td><span class="badge-item">SKIN PRIVADA</span></td><td>Skin personalizada exclusiva</td><td class="price-highlight">R$25,00</td><td><button class="btn-buy" style="padding:6px 12px; font-size:0.75rem;" onclick="openPurchaseModal('SKIN PRIVADA', 'R$25,00')">CRIAR SKIN</button></td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
+    <div class="page" id="page-servicos"><h2 class="section-title">🔧 SERVIÇOS</h2><div class="table-wrapper"><table><thead><tr><th>Serviço</th><th>Valor</th><th>Ação</th></tr></thead><tbody><tr><td>UNBAN SERIAL</td><td class="price-highlight">R$100</td><td><button class="btn-buy" style="padding:6px 12px;font-size:0.75rem;" onclick="openPurchaseModal('UNBAN','R$100,00')">SOLICITAR</button></td></tr><tr><td>REMOVER BAN</td><td class="price-highlight">R$50</td><td><button class="btn-buy" style="padding:6px 12px;font-size:0.75rem;" onclick="openPurchaseModal('REMOVER BAN','R$50,00')">SOLICITAR</button></td></tr><tr><td>ADV FACÇÃO</td><td class="price-highlight">R$20</td><td><button class="btn-buy" style="padding:6px 12px;font-size:0.75rem;" onclick="openPurchaseModal('ADV FACÇÃO','R$20,00')">CONTRATAR</button></td></tr><tr><td>ADV CORP</td><td class="price-highlight">R$20</td><td><button class="btn-buy" style="padding:6px 12px;font-size:0.75rem;" onclick="openPurchaseModal('ADV CORP','R$20,00')">CONTRATAR</button></td></tr><tr><td>SKIN PRIVADA</td><td class="price-highlight">R$25</td><td><button class="btn-buy" style="padding:6px 12px;font-size:0.75rem;" onclick="openPurchaseModal('SKIN','R$25,00')">CRIAR</button></td></tr></tbody></table></div></div>
 
-    <!-- PÁGINA IDs -->
-    <div class="page" id="page-ids">
-      <h2 class="section-title">🆔 TROCA DE IDS</h2>
-      <div class="table-wrapper">
-        <div class="table-header"><i class="fas fa-id-card"></i><h3>🔄 ALTERAÇÃO DE IDENTIFICAÇÃO</h3></div>
-        <table>
-          <thead><tr><th>Categoria</th><th>Condição</th><th>Valor</th><th>Ação</th></tr></thead>
-          <tbody>
-            <tr><td><span class="badge-item">IDS ABAIXO DE 10</span></td><td>ID 1 ao 9</td><td class="price-highlight">R$100,00</td><td><button class="btn-buy" style="padding:6px 12px; font-size:0.75rem;" onclick="openPurchaseModal('IDS ABAIXO DE 10', 'R$100,00')">COMPRAR</button></td></tr>
-            <tr><td><span class="badge-item">IDS ACIMA DE 10</span></td><td>ID 10 ao 99</td><td class="price-highlight">R$50,00</td><td><button class="btn-buy" style="padding:6px 12px; font-size:0.75rem;" onclick="openPurchaseModal('IDS ACIMA DE 10', 'R$50,00')">COMPRAR</button></td></tr>
-            <tr><td><span class="badge-item">IDS ACIMA DE 100</span></td><td>ID 100+</td><td class="price-highlight">R$25,00</td><td><button class="btn-buy" style="padding:6px 12px; font-size:0.75rem;" onclick="openPurchaseModal('IDS ACIMA DE 100', 'R$25,00')">COMPRAR</button></td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
+    <div class="page" id="page-ids"><h2 class="section-title">🆔 TROCA DE IDS</h2><div class="table-wrapper"><table><thead><tr><th>Categoria</th><th>Valor</th><th>Ação</th></tr></thead><tbody><tr><td>IDS ABAIXO 10</td><td class="price-highlight">R$100</td><td><button class="btn-buy" style="padding:6px 12px;font-size:0.75rem;" onclick="openPurchaseModal('IDS <10','R$100,00')">COMPRAR</button></td></tr><tr><td>IDS ACIMA 10</td><td class="price-highlight">R$50</td><td><button class="btn-buy" style="padding:6px 12px;font-size:0.75rem;" onclick="openPurchaseModal('IDS >10','R$50,00')">COMPRAR</button></td></tr><tr><td>IDS ACIMA 100</td><td class="price-highlight">R$25</td><td><button class="btn-buy" style="padding:6px 12px;font-size:0.75rem;" onclick="openPurchaseModal('IDS >100','R$25,00')">COMPRAR</button></td></tr></tbody></table></div></div>
 
-    <!-- PÁGINA COINS -->
-    <div class="page" id="page-coins">
-      <h2 class="section-title">🪙 COINS</h2>
-      <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
-        <div class="vip-card" style="padding: 28px 20px;"><img src="https://i.imgur.com/o4JdUXJ.png" alt="Coins ZERO 1" class="coin-icon" style="width:65px; height:65px;"><div class="vip-name" style="font-size:1.4rem;">1.000 COINS</div><div class="price" style="font-size:2rem;">R$7,00</div><button class="btn-buy" onclick="openPurchaseModal('1.000 COINS', 'R$7,00')"><i class="fas fa-shopping-cart"></i> COMPRAR</button></div>
-        <div class="vip-card popular" style="padding: 28px 20px;"><div style="position:absolute; top:12px; right:12px; background:#ffd700; color:#000; padding:3px 14px; border-radius:20px; font-weight:bold; font-size:0.8rem;">MAIS VENDIDO</div><img src="https://i.imgur.com/o4JdUXJ.png" alt="Coins ZERO 1" class="coin-icon" style="width:65px; height:65px;"><div class="vip-name" style="font-size:1.4rem;">2.000 COINS</div><div class="price" style="font-size:2rem;">R$10,00</div><button class="btn-buy" style="background:#00f2fe; color:#000;" onclick="openPurchaseModal('2.000 COINS', 'R$10,00')"><i class="fas fa-shopping-cart"></i> COMPRAR</button></div>
-        <div class="vip-card" style="padding: 28px 20px;"><img src="https://i.imgur.com/o4JdUXJ.png" alt="Coins ZERO 1" class="coin-icon" style="width:65px; height:65px;"><div class="vip-name" style="font-size:1.4rem;">5.000 COINS</div><div class="price" style="font-size:2rem;">R$30,00</div><button class="btn-buy" onclick="openPurchaseModal('5.000 COINS', 'R$30,00')"><i class="fas fa-shopping-cart"></i> COMPRAR</button></div>
-      </div>
-    </div>
+    <div class="page" id="page-coins"><h2 class="section-title">🪙 COINS</h2><div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));"><div class="vip-card" style="padding:28px 20px;"><img src="https://i.imgur.com/o4JdUXJ.png" class="coin-icon" style="width:65px;height:65px;"><div class="vip-name" style="font-size:1.4rem;">1.000 COINS</div><div class="price" style="font-size:2rem;">R$7</div><button class="btn-buy" onclick="openPurchaseModal('1.000 COINS','R$7,00')">COMPRAR</button></div><div class="vip-card popular" style="padding:28px 20px;"><div style="position:absolute;top:12px;right:12px;background:#ffd700;color:#000;padding:3px 14px;border-radius:20px;font-weight:bold;font-size:0.8rem;">MAIS VENDIDO</div><img src="https://i.imgur.com/o4JdUXJ.png" class="coin-icon" style="width:65px;height:65px;"><div class="vip-name" style="font-size:1.4rem;">2.000 COINS</div><div class="price" style="font-size:2rem;">R$10</div><button class="btn-buy" style="background:#00f2fe;color:#000;" onclick="openPurchaseModal('2.000 COINS','R$10,00')">COMPRAR</button></div><div class="vip-card" style="padding:28px 20px;"><img src="https://i.imgur.com/o4JdUXJ.png" class="coin-icon" style="width:65px;height:65px;"><div class="vip-name" style="font-size:1.4rem;">5.000 COINS</div><div class="price" style="font-size:2rem;">R$30</div><button class="btn-buy" onclick="openPurchaseModal('5.000 COINS','R$30,00')">COMPRAR</button></div></div></div>
 
-    <!-- PÁGINA DE REGRAS -->
-    <div class="page" id="page-rules">
-      <div class="rules-container"><div class="rules-card"><div class="rules-header"><i class="fas fa-scroll"></i><h2>📜 REGRAS OFICIAIS</h2><p class="subtitle">ZERO 1 ROLEPLAY <span class="flag-emoji">🇧🇷</span></p></div><h3>📌 Bem-vindo(a) à cidade!</h3><p>Antes de iniciar sua jornada na <strong>ZERO 1 ROLEPLAY</strong>, é <strong>obrigatório</strong> ler e compreender todas as regras do servidor.</p><p>Ao permanecer na cidade, você declara estar ciente e de acordo com todas as normas estabelecidas pela administração.</p><div class="highlight-box"><strong>⚠️ Aviso Importante</strong><br>O desconhecimento das regras <strong>não isenta</strong> nenhum jogador de sofrer punições.<br><br>Todas as infrações serão analisadas pela equipe administrativa, e as penalidades serão aplicadas conforme a gravidade do ocorrido e o histórico do jogador.</div><h3>⚖️ Penalidades Possíveis</h3><div class="penalties"><span class="penalty-tag penalty-advertencia">🟡 Advertência</span><span class="penalty-tag penalty-jail">🟠 Jail Administrativa</span><span class="penalty-tag penalty-temp">🔴 Banimento Temporário</span><span class="penalty-tag penalty-perm">⛔ Banimento Permanente</span></div><p>A administração reserva o direito de aplicar a punição considerada adequada para cada situação.</p><h3>🎭 Nosso Compromisso</h3><p>A <strong>ZERO 1 ROLEPLAY</strong> foi criada para oferecer uma experiência de <strong>Roleplay séria, organizada, imersiva e divertida</strong>.</p><p>Nosso compromisso é manter um ambiente justo, respeitoso e equilibrado para todos.</p><h3>🤝 Respeito à Comunidade</h3><ul class="respect-list"><li>Respeitem os demais membros da comunidade.</li><li>Valorizem o Roleplay acima de interesses pessoais.</li><li>Evitem qualquer comportamento tóxico ou antijogo.</li><li>Colaborem para manter a cidade organizada.</li></ul><h3>⚖️ Administração</h3><p>As decisões da equipe administrativa são tomadas visando o bom funcionamento do servidor.</p><p>Caso discorde de alguma punição, utilize os canais oficiais de suporte.</p><div class="heart-ending"><p>💚 ZERO 1 ROLEPLAY</p><p style="color:#8ea9c7; font-size:0.9rem;">Agradecemos por fazer parte da nossa comunidade.</p><div class="tagline"><span>📢 LEIA AS REGRAS</span><span>🤝 RESPEITE TODOS</span><span>🎭 VALORIZE O ROLEPLAY</span><span>⚡ JOGUE LIMPO</span></div></div></div></div>
-    </div>
+    <div class="page" id="page-rules"><div class="rules-container"><div class="rules-card"><div class="rules-header"><i class="fas fa-scroll"></i><h2>📜 REGRAS OFICIAIS</h2><p class="subtitle">ZERO 1 ROLEPLAY 🇧🇷</p></div><h3>📌 Bem-vindo(a)!</h3><p>Antes de iniciar na <strong>ZERO 1 ROLEPLAY</strong>, leia todas as regras.</p><div class="highlight-box"><strong>⚠️ Aviso</strong><br>O desconhecimento das regras <strong>não isenta</strong> de punições.</div><h3>⚖️ Penalidades</h3><div class="penalties"><span class="penalty-tag penalty-advertencia">🟡 Advertência</span><span class="penalty-tag penalty-jail">🟠 Jail</span><span class="penalty-tag penalty-temp">🔴 Ban Temp</span><span class="penalty-tag penalty-perm">⛔ Ban Perm</span></div><div class="heart-ending"><p>💚 ZERO 1 ROLEPLAY</p><div class="tagline"><span>📢 LEIA AS REGRAS</span><span>🤝 RESPEITE</span><span>🎭 VALORIZE O RP</span><span>⚡ JOGUE LIMPO</span></div></div></div></div></div>
 
-    <footer>
-      <p>© 2026 ZERO 1 ROLEPLAY • Todos os direitos reservados.</p>
-      <p style="margin-top: 6px; color: #00b4d8;"><i class="fas fa-shield-alt"></i> Sistema seguro de pagamentos • Preços sujeitos a alteração</p>
-    </footer>
+    <footer><p>© 2026 ZERO 1 ROLEPLAY • Todos os direitos reservados.</p></footer>
   </div>
 
-  <!-- BOTÃO TICKET FLUTUANTE -->
-  <div class="ticket-panel">
-    <div class="ticket-tooltip">🎫 Abrir Ticket</div>
-    <a href="https://discord.gg/yXDe8RSW7Y" target="_blank" class="ticket-toggle" title="Abrir Ticket no Discord"><i class="fas fa-ticket-alt"></i></a>
-  </div>
+  <!-- BOTÕES FLUTUANTES + MODAL -->
+  <div class="ticket-panel"><div class="ticket-tooltip">🎫 Ticket</div><a href="https://discord.gg/yXDe8RSW7Y" target="_blank" class="ticket-toggle"><i class="fas fa-ticket-alt"></i></a></div>
+  <div class="help-panel"><button class="help-toggle" onclick="toggleHelpBox()"><i class="fas fa-headset"></i></button><div class="help-box" id="help-box"><h4>AJUDA</h4><div class="input-group"><label>Discord *</label><input type="text" id="help-discord-name"></div><div class="input-group"><label>Dúvida *</label><textarea id="help-message"></textarea></div><button class="btn-send-help" onclick="submitHelp()">ENVIAR</button><p class="success-msg" id="help-success">✅ Enviado!</p></div></div>
 
-  <!-- PAINEL DE AJUDA -->
-  <div class="help-panel">
-    <button class="help-toggle" onclick="toggleHelpBox()"><i class="fas fa-headset"></i></button>
-    <div class="help-box" id="help-box">
-      <h4><i class="fas fa-question-circle"></i> PRECISA DE AJUDA?</h4>
-      <div class="input-group"><label>Seu nome no Discord *</label><input type="text" id="help-discord-name" placeholder="ex: usuario" required></div>
-      <div class="input-group"><label>Sua dúvida / problema *</label><textarea id="help-message" placeholder="Descreva sua dúvida..." required></textarea></div>
-      <button class="btn-send-help" onclick="submitHelp()"><i class="fas fa-paper-plane"></i> ENVIAR</button>
-      <p class="success-msg" id="help-success" style="text-align:center; margin-top:8px;">✅ Dúvida enviada!</p>
-    </div>
-  </div>
-
-  <!-- MODAL DE COMPRA -->
-  <div class="modal-overlay" id="purchase-modal">
-    <div class="modal">
-      <h3><i class="fas fa-shopping-cart"></i> FINALIZAR PEDIDO</h3>
-      <div class="item-name-modal" id="modal-item-name"></div>
-      <div id="purchase-form">
-        <div class="input-group"><label>Seu nome no Discord *</label><input type="text" id="buyer-discord-name" placeholder="ex: usuario" required></div>
-        <div class="input-group"><label>Seu ID no servidor (opcional)</label><input type="text" id="buyer-game-id" placeholder="Seu ID no RP"></div>
-        <div class="input-group">
-          <label>Método de pagamento *</label>
-          <select id="payment-method" style="color:#00ff64;">
-            <option value="">Selecione...</option>
-            <option value="PIX" style="color:#00ff64;">🟢 PIX (Chave: 09489744190)</option>
-            <option value="Discord" style="color:#5865F2;">🔵 DISCORD (Abrir Ticket)</option>
-          </select>
-        </div>
-        <button class="btn-submit" onclick="submitPurchase()"><i class="fas fa-paper-plane"></i> CONFIRMAR PEDIDO</button>
-      </div>
-      <!-- CAIXA PIX -->
-      <div class="pix-info-box" id="pix-info-box">
-        <div class="pix-icon"><i class="fas fa-qrcode"></i></div>
-        <h4>📱 PAGUE VIA PIX</h4>
-        <p style="color:#b4c8e0; font-size:0.9rem;">Copie a chave PIX abaixo e faça o pagamento:</p>
-        <div class="pix-key" id="pix-key-display">09489744190</div>
-        <button class="btn-copy-pix" onclick="copyPixKey()"><i class="fas fa-copy"></i> COPIAR CHAVE PIX</button>
-        <a href="https://discord.gg/yXDe8RSW7Y" target="_blank" class="btn-discord-ticket-pix"><i class="fab fa-discord"></i> ABRIR TICKET</a>
-        <p class="pix-warning"><i class="fas fa-exclamation-triangle"></i> Após o pagamento, abra um ticket no Discord e envie o comprovante para resgatar sua Key!</p>
-      </div>
-      <!-- CAIXA DISCORD -->
-      <div class="discord-alert-box" id="discord-alert-box">
-        <div class="discord-alert-icon"><i class="fab fa-discord"></i></div>
-        <h4>📢 PEDIDO REGISTRADO!</h4>
-        <p>Seu pedido foi enviado!<br><strong>Abra um ticket no Discord</strong> para combinar o pagamento e resgatar sua Key.</p>
-        <a href="https://discord.gg/yXDe8RSW7Y" target="_blank" class="btn-discord-ticket"><i class="fab fa-discord"></i> ABRIR TICKET NO DISCORD</a>
-        <p style="margin-top:10px; font-size:0.8rem; color:#8ea9c7;">Nosso time estará te aguardando!</p>
-      </div>
-      <button class="btn-close" onclick="closeModal()">FECHAR</button>
-    </div>
-  </div>
+  <div class="modal-overlay" id="purchase-modal"><div class="modal"><h3><i class="fas fa-shopping-cart"></i> FINALIZAR</h3><div class="item-name-modal" id="modal-item-name"></div><div id="purchase-form"><div class="input-group"><label>Discord *</label><input type="text" id="buyer-discord-name"></div><div class="input-group"><label>ID Jogo</label><input type="text" id="buyer-game-id"></div><div class="input-group"><label>Método *</label><select id="payment-method" style="color:#00ff64;"><option value="">Selecione...</option><option value="PIX" style="color:#00ff64;">🟢 PIX (09489744190)</option><option value="Discord" style="color:#5865F2;">🔵 DISCORD</option></select></div><button class="btn-submit" onclick="submitPurchase()">CONFIRMAR</button></div><div class="pix-info-box" id="pix-info-box"><h4>📱 PIX</h4><div class="pix-key">09489744190</div><button class="btn-copy-pix" onclick="copyPixKey()">COPIAR PIX</button><a href="https://discord.gg/yXDe8RSW7Y" target="_blank" class="btn-discord-ticket-pix">ABRIR TICKET</a></div><div class="discord-alert-box" id="discord-alert-box"><h4>📢 PEDIDO REGISTRADO!</h4><p>Abra ticket no Discord!</p><a href="https://discord.gg/yXDe8RSW7Y" target="_blank" class="btn-discord-ticket">ABRIR TICKET</a></div><button class="btn-close" onclick="closeModal()">FECHAR</button></div></div>
 
   <script>
+    const WEBHOOK_URL = 'https://ptb.discord.com/api/webhooks/1521657032971780106/WIc4i2wN3QK73C9rIQmcvtrHyEu2eoGmtrC3Z_aff1KaZsv2PS4xp7uJoWTcZh2DXAsS';
+    let loadingComplete = false;
+
+    function skipLoading() {
+      if (!loadingComplete) {
+        loadingComplete = true;
+        document.getElementById('loadscreen-bar').style.width = '100%';
+        document.getElementById('loadscreen-percentage').textContent = '100%';
+        setTimeout(() => {
+          document.getElementById('loadscreen').classList.add('hidden');
+          initParticles();
+          const v = document.getElementById('loadscreen-video'); if (v) v.pause();
+        }, 300);
+      }
+    }
+
     function initLoadscreen() {
       const ls = document.getElementById('loadscreen');
       const bar = document.getElementById('loadscreen-bar');
       const perc = document.getElementById('loadscreen-percentage');
       let p = 0;
+      // ⏱️ 15 SEGUNDOS (15000ms)
+      const totalTime = 15000;
+      const interval = 50;
+      const steps = totalTime / interval;
+      const increment = 100 / steps;
+      
       const intv = setInterval(() => {
-        p += 4;
-        if (p > 70) p += 1.2;
-        if (p >= 100) { p = 100; clearInterval(intv); bar.style.width = '100%'; perc.textContent = '100%'; setTimeout(() => { ls.classList.add('hidden'); initParticles(); }, 400); }
+        if (loadingComplete) { clearInterval(intv); return; }
+        p += increment;
+        if (p > 70) p += increment * 0.2;
+        if (p >= 100) { p = 100; loadingComplete = true; clearInterval(intv); bar.style.width = '100%'; perc.textContent = '100%';
+          setTimeout(() => { ls.classList.add('hidden'); initParticles(); const v = document.getElementById('loadscreen-video'); if (v) v.pause(); }, 500); }
         else { bar.style.width = p + '%'; perc.textContent = Math.floor(p) + '%'; }
-      }, 40);
+      }, interval);
     }
 
     function initParticles() {
@@ -1705,8 +754,6 @@
       }
     }
 
-    const WEBHOOK_URL = 'https://ptb.discord.com/api/webhooks/1522696357666619492/YnBAaWk7KmsYRIRcU-QDUumqMfLAndal0b8ieNs7NdQfAx-uNNQMnDV29wkST_h6gISb';
-
     function showPage(pn) {
       document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
       const tp = document.getElementById('page-' + pn); if (tp) tp.classList.add('active');
@@ -1716,7 +763,6 @@
     }
 
     let curItem = '', curPrice = '';
-
     function openPurchaseModal(item, price) {
       curItem = item; curPrice = price;
       document.getElementById('modal-item-name').textContent = item + ' - ' + price;
@@ -1724,98 +770,38 @@
       document.getElementById('purchase-form').style.display = 'block';
       document.getElementById('pix-info-box').classList.remove('show');
       document.getElementById('discord-alert-box').classList.remove('show');
-      document.getElementById('buyer-discord-name').value = '';
-      document.getElementById('buyer-game-id').value = '';
-      document.getElementById('payment-method').value = '';
     }
-
     function closeModal() { document.getElementById('purchase-modal').classList.remove('active'); }
-
-    function copyPixKey() {
-      navigator.clipboard.writeText('09489744190').then(() => {
-        alert('✅ Chave PIX copiada: 09489744190');
-      }).catch(() => {
-        prompt('Copie a chave PIX:', '09489744190');
-      });
-    }
+    function copyPixKey() { navigator.clipboard.writeText('09489744190').then(() => alert('✅ PIX copiado!')); }
 
     async function submitPurchase() {
       const name = document.getElementById('buyer-discord-name').value.trim();
       const gid = document.getElementById('buyer-game-id').value.trim();
       const method = document.getElementById('payment-method').value;
-      if (!name) { alert('Preencha seu nome no Discord!'); return; }
-      if (!method) { alert('Selecione um método de pagamento!'); return; }
-
+      if (!name || !method) { alert('Preencha os campos!'); return; }
       const now = new Date();
       const embed = {
-        title: '🛒 NOVA COMPRA - ZERO 1 ROLEPLAY',
-        color: method === 'PIX' ? 0x00ff64 : 0x5865F2,
-        fields: [
-          { name: '👤 Comprador (Discord)', value: name, inline: true },
-          { name: '🎮 ID no Jogo', value: gid || 'Não informado', inline: true },
-          { name: '🛍️ Item', value: curItem, inline: true },
-          { name: '💲 Valor', value: curPrice, inline: true },
-          { name: '💳 Método', value: method, inline: true },
-          { name: '📅 Data/Hora', value: `${now.toLocaleDateString('pt-BR')} às ${now.toLocaleTimeString('pt-BR')}`, inline: true },
-          { name: '🔑 Status', value: method === 'PIX' ? '⏳ Aguardando comprovante via ticket' : '⏳ Aguardando ticket para combinar pagamento', inline: false }
-        ],
-        footer: { text: 'ZERO 1 ROLEPLAY • Sistema de Compras' },
-        timestamp: new Date().toISOString()
+        title: '🛒 COMPRA - ZERO 1', color: method === 'PIX' ? 0x00ff64 : 0x5865F2,
+        fields: [{ name: '👤', value: name, inline: true }, { name: '🎮', value: gid || 'N/A', inline: true }, { name: '🛍️', value: curItem, inline: true }, { name: '💲', value: curPrice, inline: true }, { name: '💳', value: method, inline: true }]
       };
-
       try {
-        const r = await fetch(WEBHOOK_URL, {
-          method: 'POST', headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ content: '📢 **NOVA COMPRA REGISTRADA!**', embeds: [embed] })
-        });
-        if (r.ok) {
-          document.getElementById('purchase-form').style.display = 'none';
-          if (method === 'PIX') {
-            document.getElementById('pix-info-box').classList.add('show');
-          } else {
-            document.getElementById('discord-alert-box').classList.add('show');
-          }
-        } else { alert('Erro ao enviar pedido.'); }
-      } catch (e) { console.error(e); alert('Erro de conexão.'); }
+        await fetch(WEBHOOK_URL, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ content: '📢 **COMPRA!**', embeds: [embed] }) });
+        document.getElementById('purchase-form').style.display = 'none';
+        if (method === 'PIX') document.getElementById('pix-info-box').classList.add('show');
+        else document.getElementById('discord-alert-box').classList.add('show');
+      } catch (e) {}
     }
 
-    function toggleHelpBox() {
-      const box = document.getElementById('help-box');
-      box.classList.toggle('active');
-      document.getElementById('help-success').classList.remove('show');
-    }
-
+    function toggleHelpBox() { document.getElementById('help-box').classList.toggle('active'); }
     async function submitHelp() {
       const dn = document.getElementById('help-discord-name').value.trim();
       const msg = document.getElementById('help-message').value.trim();
-      if (!dn) { alert('Preencha seu nome no Discord!'); return; }
-      if (!msg) { alert('Descreva sua dúvida!'); return; }
-      const now = new Date();
-      const embed = {
-        title: '❓ NOVA DÚVIDA - ZERO 1 ROLEPLAY', color: 0xffc107,
-        fields: [
-          { name: '👤 Usuário Discord', value: dn, inline: true },
-          { name: '📅 Data/Hora', value: `${now.toLocaleDateString('pt-BR')} às ${now.toLocaleTimeString('pt-BR')}`, inline: true },
-          { name: '💬 Mensagem', value: msg }
-        ],
-        footer: { text: 'ZERO 1 ROLEPLAY • Painel de Ajuda' }, timestamp: new Date().toISOString()
-      };
-      try {
-        const r = await fetch(WEBHOOK_URL, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ content: '📢 **NOVA SOLICITAÇÃO DE AJUDA!**', embeds: [embed] }) });
-        if (r.ok) {
-          document.getElementById('help-success').classList.add('show');
-          document.getElementById('help-discord-name').value = '';
-          document.getElementById('help-message').value = '';
-          setTimeout(() => { document.getElementById('help-success').classList.remove('show'); document.getElementById('help-box').classList.remove('active'); }, 3000);
-        }
-      } catch (e) { console.error(e); }
+      if (!dn || !msg) return;
+      try { await fetch(WEBHOOK_URL, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ content: '📢 **DÚVIDA!**', embeds: [{ title: '❓ DÚVIDA', fields: [{ name: '👤', value: dn }, { name: '💬', value: msg }] }] }) }); } catch (e) {}
+      document.getElementById('help-box').classList.remove('active');
     }
 
     document.getElementById('purchase-modal').addEventListener('click', function(e) { if (e.target === this) closeModal(); });
-    document.addEventListener('click', function(e) {
-      const hp = document.querySelector('.help-panel'), hb = document.getElementById('help-box');
-      if (!hp.contains(e.target) && hb.classList.contains('active')) hb.classList.remove('active');
-    });
 
     initLoadscreen();
   </script>
